@@ -90,22 +90,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 child: ElevatedButton(
                   child: const Text('Login'),
                   onPressed: () {
+                                                                                      
+                    Navigator.push(context, MaterialPageRoute(builder: (context) 
+                    {
+                      return const Dashboard(title: 'Dashboard');
+                    }));
+
                   },
                 )
-            ),
-            Row(
-              children: <Widget>[
-                const Text('Does not have account?'),
-                TextButton(
-                  child: const Text(
-                    'Sign in',
-                    style: TextStyle(fontSize: 20),
-                  ),
-                  onPressed: () {
-                  },
-                )
-              ],
-              mainAxisAlignment: MainAxisAlignment.center,
             ),
           ],
         ));

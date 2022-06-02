@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app_module3/Feature1&2.dart';
+import 'package:my_app_module3/Feature1.dart';
+import 'package:my_app_module3/Settings(Feature2).dart';
 import 'package:my_app_module3/editProfile.dart';
 
 class Dashboard extends StatelessWidget {
@@ -66,12 +67,12 @@ class Dashboard extends StatelessWidget {
                     minWidth: 150.0,
                     color: Theme.of(context).primaryColor,
                     textColor: Colors.white,
-                    child: new Text("About"),
+                    child: new Text("Register"),
                     onPressed: () => {
                                                                   
                     Navigator.push(context, MaterialPageRoute(builder: (context) 
                     {
-                      return const About(title: 'About');
+                      return const Register(title: 'Register');
                     }))
 
 
